@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+
+.header img {
+    margin-left: 50px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-navigation-item {
+    display: inline-block;
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.main-navigation-item a {
+    color: #ffffffff;
+}
+
+.navbar>.nav-toggle {
+    display: none;
+}
+
+
+@media(max-width:600px) and (min-width:0) {
+
+    .container{
+        position: relative;
+    }
+
+    .navbar .ul_li {
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        height: 800px;
+        z-index: 99;
+        background: rgba(20,28,36);
+        width: 100%;
+        padding-top: 50px;
+        transform: translateX(-100%);
+        transition: all .45s;
+    }
+
+    .navbar>.ul_li a::before {
+        background: transparent;
+    }
+
+    .navbar>.ul_li.open {
+        transform: translateX(0);
+    }
+
+
+    .header .nav-toggle {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 680px;
+        z-index: 2;
+    }
+
+    .nav-toggle .bar {
+        position: absolute;
+        right: 62px;
+        width: 32px;
+        height: 2px;
+        background: #ffffffff;
+        transition: all .45s ease-in-out;
+    }
+
+
+    .nav-toggle .bar::before,
+    .nav-toggle .bar::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: #ffffffff;
+        border-radius: 2px;
+        transition: all .45s ease-in-out;
+    }
+
+    .nav-toggle .bar::before {
+        width: 25px;
+        transform: translateY(-8px);
+        right: 0;
+    }
+
+    .nav-toggle .bar::after {
+        width: 32px;
+        transform: translateY(8px);
+        right: 0;
+    }
+
+
+    .nav-toggle.open .bar {
+        transform: translateX(-40px);
+        background: transparent;
+    }
+
+    .nav-toggle.open .bar::before {
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+    }
+
+    .nav-toggle.open .bar::after {
+        transform: rotate(-45deg) translate(26px, 26px);
+    }
+
+
+    .header img {
+        display: none;
+    }
+}

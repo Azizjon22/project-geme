@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgba(20,28,36);
+}
+
+@media (max-width:600px) and (min-width:400px){
+    .container{
+        max-width: 600px;
+    }
+
+    .globol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:399px) and (min-width:200px){
+    .container{
+        max-width: 450px;
+    }
+
+    .globol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

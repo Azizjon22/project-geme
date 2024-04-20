@@ -1,0 +1,124 @@
+.cards2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.card2 {
+    width: 400px;
+    height: 543px;
+    border-radius: 5px 0px 0px 0px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #1F2631;
+}
+
+
+.card2 h1 {
+    width: 311px;
+    height: 90px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    color: #ffffffff;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.card2 .sum {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.card2 .title {
+    width: 311px;
+    height: 173.76px;
+    font-family: Roboto, sans-serif;
+    font-size: 21.33px;
+    font-weight: 300;
+    line-height: 31.99px;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: #ABABAB;
+}
+
+.button-sum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.card2 button {
+    width: 321px;
+    height: 70px;
+    border-radius: 5px;
+    background: #00C5FF;
+    border: none;
+    font-family: Aire Exterior;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43.2px;
+    border-radius: 7px;
+    z-index: 99;
+}
+
+.btn2 {
+    cursor: pointer;
+    position: static;
+}
+
+
+.cards2 .active {
+    background-color: #00C5FF;
+    color: #1F2631;
+}
+
+.active .button-sum .btn2 {
+    background-color: #141C24;
+    color: white;
+}
+
+.active h1 {
+    color: #141C24;
+}
+
+.active .title {
+    color: #141C24;
+}
+
+.active .sum {
+    color: #141C24;
+}
+
+.line-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.line-footer .line {
+    width: 500px;
+}
+
+
+@media (max-width:600px) and (min-width:0){
+      .cards2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      .line__ff{
+        display: none;
+      }
+}

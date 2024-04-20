@@ -1,0 +1,60 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+
+form input {
+    width: 390px;
+    height: 75px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    border: none;
+    padding-left: 15px;
+}
+
+
+.form__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form__button button {
+    width: 251px;
+    height: 61px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.chackboxx{
+    display: flex;
+    align-items: self-start;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.chackboxx p{
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 14.06px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.box p {
+    font-family: Aire Exterior,sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color: #FFFFFF80;
+}

@@ -1,0 +1,159 @@
+
+
+.game_B{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.game_header{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.game_header h5{
+    color: #57D6FF;
+}
+
+.game_title h2{
+    font-family: Aire Exterior,sans-serif;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: left;
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+
+.game_title h4{
+    font-family: Roboto,sans-serif;
+    font-size: 21.33px;
+    font-weight: 300;
+    line-height: 31.99px;
+    text-align: left;
+    color: #ABABAB;
+    padding-top: 90px;
+}
+
+.game_title h6{
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+    color: #00C5FF;  
+}
+
+.footer__line{
+    margin-top: 50px;
+}
+
+.footer__line p{
+   width: 150px;
+}
+
+
+
+
+
+.footer__karta__title{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer__karta__title h6{
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: left;
+    color:#57D6FF;
+}
+
+.footer__karta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.game_B .rasm2{
+    display: none;
+}
+
+.mobi1{
+    display: none;
+}
+
+@media(max-width:600px) and (min-width:0){
+    .game_B{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 70px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .game_B .rasm{
+        display: none;
+    }
+
+    .mobi1{
+        display: block;
+    }
+
+    .game_title{
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+
+    .game_B .rasm2{
+        display: block;
+        width: 450px;
+    }
+
+
+    .footer__karta__img img{
+        width: 400px;
+    }
+
+    .com1{
+        display: none;
+    }
+
+    .game_title{
+        position: relative;
+    }
+
+    .mobi__h{
+        position: absolute;
+        top: 0;
+        left: 50px;
+    }
+
+    .mobi__p{
+        position: absolute;
+        top: 550px;
+    }
+    .mobi__pp{
+        position: absolute;
+        top: 800px;
+        left: 100px;
+    }
+
+    .footer__karta{
+        margin-top: 340px;
+    }
+
+    
+}

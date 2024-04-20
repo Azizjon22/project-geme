@@ -1,0 +1,36 @@
+.contact__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 90px;
+}
+
+.contact__img img{
+    filter: invert(1);
+}
+
+.tel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.tel a{
+    color: white;
+    font-family: sans-serif;
+}
+
+.tel h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+@media(max-width:600px) and (min-width:0){
+    .contact__img img{
+        width: 45px;
+    }
+}
